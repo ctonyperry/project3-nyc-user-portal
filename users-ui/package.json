@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "s3refresh": "ng build --configuration=production && aws s3 sync dist/users-ui/ s3://seca2-tony-users"
   },
   "private": true,
   "dependencies": {
